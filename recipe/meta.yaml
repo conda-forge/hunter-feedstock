@@ -1,5 +1,5 @@
 {% set name = "hunter" %}
-{% set version = "3.3.8" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b5fcd01da7c8ddf299805d89cbbaa3ba379660335ea709550f01bf6b32b946f7
+  sha256: 3a5062498e260045aed5aa759934832994607717be66ad01f269a27a2762d423
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - hunter-trace = hunter.remote:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv

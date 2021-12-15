@@ -32,7 +32,6 @@ requirements:
 test:
   imports:
     - hunter
-    - hunter.backports
   commands:
     - hunter-trace --help  # [not win]
 

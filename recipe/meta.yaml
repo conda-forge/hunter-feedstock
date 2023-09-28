@@ -10,7 +10,7 @@ source:
   sha256: 16fbea3d6a67d474e13ee726bdf464211613ddddde338345338c3a5cd942585b
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - hunter-trace = hunter.remote:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv

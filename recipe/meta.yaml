@@ -1,13 +1,13 @@
 {% set name = "hunter" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16f4fb4dbde366bac61ebf235bc4d075bfd8748009c8a4e0327d2fbca6f611d6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ea027d75655694c9e99e5a6c4fa62b673511f85f4076773d7c4ba3fd04047d85
 
 build:
   number: 0
